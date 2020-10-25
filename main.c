@@ -13,7 +13,7 @@ int main() {
 
     String *fileDir = stringInitialization(100);
 
-    printf("**Use the key word exit, to  end the program.**\n\n");
+    printf("**Use the key word exit, to end the program.**\n\n");
     while (1) {
         printf("Please enter the file path: ");
         stringScanInput(fileDir, stdin);

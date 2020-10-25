@@ -41,8 +41,14 @@ Example of a valid file:
 | line number | line content | comment |
 |--|--|--|
 | 1 | A B | the logic expression variables|
-| 2 | The logic expression ||
+| 2 | !(A+B).(A.B)+!((A+B).(A.B)) | The logic expression|
 | 3 | 1   | the output of the function when A = 0 and B = 0
 | 4 | 1   | the output of the function when A = 0 and B = 1
 | 5 | 1   | the output of the function when A = 1 and B = 0
 | 6 | 0   | the output of the function when A = 1 and B = 1
+
+
+## Screenshots
+![](Screenshots/screen1.png)
+
+![](Screenshots/screen2.png)
