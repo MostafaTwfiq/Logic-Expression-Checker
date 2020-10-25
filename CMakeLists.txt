@@ -220,4 +220,4 @@ add_executable(LogicExpressionChecker
         "DataStructure-Algorithms/Unit Test/Tests/DataStructuresTests/ListsTest/SetTest/SetTest.c"
         "DataStructure-Algorithms/Unit Test/Tests/DataStructuresTests/ListsTest/SetTest/SetTest.h"
 
-        LogixInfixCalculator.c LogixInfixCalculator.h)
+        LogicInfixCalculator.c LogicInfixCalculator.h)

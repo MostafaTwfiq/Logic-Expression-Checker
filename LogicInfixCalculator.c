@@ -1,4 +1,4 @@
-#include "LogixInfixCalculator.h"
+#include "LogicInfixCalculator.h"
 
 #define NOT_PRIORITY 3;
 #define AND_PRIORITY 2;

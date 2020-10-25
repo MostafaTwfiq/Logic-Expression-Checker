@@ -1,5 +1,5 @@
-#ifndef LOGICEXPRESSIONCHECKER_LOGIXINFIXCALCULATOR_H
-#define LOGICEXPRESSIONCHECKER_LOGIXINFIXCALCULATOR_H
+#ifndef LOGICEXPRESSIONCHECKER_LOGICINFIXCALCULATOR_H
+#define LOGICEXPRESSIONCHECKER_LOGICINFIXCALCULATOR_H
 
 #include <stdlib.h>
 #include <string.h>
@@ -20,4 +20,4 @@ int variableHolderCmpVar(void *vh1, void *vh2);
 Queue *generatePostfix(String *infix, Vector *varHolder);
 short calculatePostfix(Queue *postfixQueue);
 
-#endif //LOGICEXPRESSIONCHECKER_LOGIXINFIXCALCULATOR_H
+#endif //LOGICEXPRESSIONCHECKER_LOGICINFIXCALCULATOR_H

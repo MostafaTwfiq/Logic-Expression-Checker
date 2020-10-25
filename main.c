@@ -5,7 +5,7 @@
 #include "DataStructure-Algorithms/DataStructure/Strings/Headers/String.h"
 #include "DataStructure-Algorithms/FilesHandler/Headers/TxtFileLoader.h"
 #include "DataStructure-Algorithms/DataStructure/Lists/Headers/Vector.h"
-#include "LogixInfixCalculator.h"
+#include "LogicInfixCalculator.h"
 
 void checkExpression(String *fileDir);
 
