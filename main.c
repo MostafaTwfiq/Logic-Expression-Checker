@@ -87,7 +87,7 @@ short fileIsValid(TxtFileLoader *txtFileLoader, int linesNum, int numOfVars) {
 void checkExpression(String *fileDir) {
 
     if (!fileIsExist(fileDir->string)) {
-        fprintf(stderr, "File not found.\n");
+        printf("File not found.\n");
         return;
     }
 
@@ -95,7 +95,7 @@ void checkExpression(String *fileDir) {
 
     int linesCounter = txtLoaderCountLines(txtFileLoader);
     if (linesCounter < 3) {
-        fprintf(stderr, "File is not valid.\n");
+        printf("File is not valid.\n");
         destroyTxtFileLoader(txtFileLoader);
         return;
     }
@@ -103,7 +103,7 @@ void checkExpression(String *fileDir) {
     Vector *variablesV = loadVariables(txtFileLoader);
 
     if (!fileIsValid(txtFileLoader, linesCounter, vectorGetLength(variablesV))) {
-        fprintf(stderr, "File is not valid.\n");
+        printf("File is not valid.\n");
         destroyTxtFileLoader(txtFileLoader);
         destroyVector(variablesV);
         return;
