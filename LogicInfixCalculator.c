@@ -121,13 +121,7 @@ short performOperator(char *operator, Stack *valuesStack) {
 
 }
 
-short calculatePostfix(Queue *originalPostfixQueue) {
-
-    void **postfixArr = queueToArray(originalPostfixQueue);
-
-    Queue *postfixQueue = queueInitialization(free);
-    queueEnqueueAll(postfixQueue, postfixArr, queueGetLength(originalPostfixQueue));
-    free(postfixArr);
+short calculatePostfix(Queue *postfixQueue) {
 
     Stack *valuesStack = stackInitialization(free);
     while (!queueIsEmpty(postfixQueue)) {
@@ -160,6 +154,7 @@ short calculatePostfix(Queue *originalPostfixQueue) {
 
     short finalValue = (short ) atoi((char *) stackPeek(valuesStack));
     destroyStack(valuesStack);
+    destroyQueue(postfixQueue);
 
     return finalValue;
 

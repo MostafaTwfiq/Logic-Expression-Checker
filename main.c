@@ -155,7 +155,6 @@ void checkExpression(String *fileDir) {
             destroyVector(values);
             destroyVector(varsHolder);
             destroyString(expressionString);
-            destroyQueue(postfix);
             return;
         }
 
@@ -167,11 +166,8 @@ void checkExpression(String *fileDir) {
             destroyVector(values);
             destroyVector(varsHolder);
             destroyString(expressionString);
-            destroyQueue(postfix);
             return;
         }
-
-        destroyQueue(postfix);
 
     }
 
