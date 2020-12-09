@@ -27,7 +27,7 @@ The text file form must be as following:
 
 **Second line:** The logic expression.
 
-**The rest of lines:** for the rest of file every line will be the expected output of the logic function in order.
+**The rest of lines:** for the rest of file every line will be the expected output of the logic function in order (You can use don't care as a capital `X`).
 
 Example of a valid file:
 
