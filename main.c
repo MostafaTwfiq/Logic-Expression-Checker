@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 
 #include "DataStructure-Algorithms/DataStructure/Strings/Headers/String.h"
 #include "DataStructure-Algorithms/FilesHandler/Headers/TxtFileLoader.h"
@@ -71,7 +72,9 @@ short fileIsValid(TxtFileLoader *txtFileLoader, int linesNum, int numOfVars) {
 
         currentLine = (String *) vectorGet(lines, i);
 
-        if (!stringEqualsC(currentLine, "0") && !stringEqualsC(currentLine, "1")) {
+        if (!stringEqualsC(currentLine, "0")
+        && !stringEqualsC(currentLine, "1") &&
+        !stringEqualsC(currentLine, "X")) {
             destroyVector(lines);
             return 0;
         }
@@ -134,6 +137,12 @@ void checkExpression(String *fileDir) {
                 ((VariableHolder *) vectorGet(varsHolder, vectorGetLength(varsHolder) - 1 - j))->val = 0;
             }
 
+        }
+
+
+        if (stringEqualsC((String *) vectorGet(values, i), "X")) {
+            printf("Expected: X, Ans: X  ---->  %d\n", i);
+            continue;
         }
 
         Queue *postfix = generatePostfix(expressionString, varsHolder);
