@@ -19,7 +19,7 @@ void freeVariableHolder(void *variableHolder) {
     free(variableHolder);
 }
 
-int variableHolderCmpVar(void *vh1, void *vh2) {
+int variableHolderCmpVar(const void *vh1, const void *vh2) {
     return strcmp(((VariableHolder *)vh1)->var, (char *) vh2);
 }
 

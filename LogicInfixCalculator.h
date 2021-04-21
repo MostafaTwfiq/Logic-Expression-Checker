@@ -16,7 +16,7 @@ typedef struct VariableHolder {
 } VariableHolder;
 
 void freeVariableHolder(void *variableHolder);
-int variableHolderCmpVar(void *vh1, void *vh2);
+int variableHolderCmpVar(const void *vh1, const void *vh2);
 Queue *generatePostfix(String *infix, Vector *varHolder);
 short calculatePostfix(Queue *postfixQueue);
 
